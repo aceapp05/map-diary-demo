@@ -23,15 +23,15 @@
 		CEAC49AF1640286B0098167B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CEAC49B11640286B0098167B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CEAC49B31640286B0098167B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CEAC49B71640286B0098167B /* MapDiaryDemo-Info.plist */ = {isa = PBXFileReference; path = "MapDiaryDemo-Info.plist"; sourceTree = "<group>"; };
+		CEAC49B71640286B0098167B /* MapDiaryDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MapDiaryDemo-Info.plist"; sourceTree = "<group>"; };
 		CEAC49B91640286B0098167B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CEAC49BB1640286B0098167B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CEAC49BD1640286B0098167B /* MapDiaryDemo-Prefix.pch */ = {isa = PBXFileReference; path = "MapDiaryDemo-Prefix.pch"; sourceTree = "<group>"; };
-		CEAC49BE1640286B0098167B /* MDAppDelegate.h */ = {isa = PBXFileReference; path = MDAppDelegate.h; sourceTree = "<group>"; };
+		CEAC49BD1640286B0098167B /* MapDiaryDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MapDiaryDemo-Prefix.pch"; sourceTree = "<group>"; };
+		CEAC49BE1640286B0098167B /* MDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDAppDelegate.h; sourceTree = "<group>"; };
 		CEAC49BF1640286B0098167B /* MDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDAppDelegate.m; sourceTree = "<group>"; };
 		CEAC49C21640286B0098167B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		CEAC49C51640286B0098167B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		CEAC49C71640286B0098167B /* MDViewController.h */ = {isa = PBXFileReference; path = MDViewController.h; sourceTree = "<group>"; };
+		CEAC49C71640286B0098167B /* MDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDViewController.h; sourceTree = "<group>"; };
 		CEAC49C81640286B0098167B /* MDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
