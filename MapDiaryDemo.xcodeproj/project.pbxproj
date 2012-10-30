@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEAC49B01640286B0098167B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAC49AF1640286B0098167B /* UIKit.framework */; };
+		CEAC49B21640286B0098167B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAC49B11640286B0098167B /* Foundation.framework */; };
+		CEAC49B41640286B0098167B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAC49B31640286B0098167B /* CoreGraphics.framework */; };
+		CEAC49BA1640286B0098167B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEAC49B81640286B0098167B /* InfoPlist.strings */; };
+		CEAC49BC1640286B0098167B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAC49BB1640286B0098167B /* main.m */; };
+		CEAC49C01640286B0098167B /* MDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAC49BF1640286B0098167B /* MDAppDelegate.m */; };
+		CEAC49C31640286B0098167B /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAC49C11640286B0098167B /* MainStoryboard_iPhone.storyboard */; };
+		CEAC49C61640286B0098167B /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAC49C41640286B0098167B /* MainStoryboard_iPad.storyboard */; };
+		CEAC49C91640286B0098167B /* MDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAC49C81640286B0098167B /* MDViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CEAC49AB1640286B0098167B /* MapDiaryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapDiaryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEAC49AF1640286B0098167B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CEAC49B11640286B0098167B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CEAC49B31640286B0098167B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CEAC49B71640286B0098167B /* MapDiaryDemo-Info.plist */ = {isa = PBXFileReference; path = "MapDiaryDemo-Info.plist"; sourceTree = "<group>"; };
+		CEAC49B91640286B0098167B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CEAC49BB1640286B0098167B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEAC49BD1640286B0098167B /* MapDiaryDemo-Prefix.pch */ = {isa = PBXFileReference; path = "MapDiaryDemo-Prefix.pch"; sourceTree = "<group>"; };
+		CEAC49BE1640286B0098167B /* MDAppDelegate.h */ = {isa = PBXFileReference; path = MDAppDelegate.h; sourceTree = "<group>"; };
+		CEAC49BF1640286B0098167B /* MDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDAppDelegate.m; sourceTree = "<group>"; };
+		CEAC49C21640286B0098167B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		CEAC49C51640286B0098167B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		CEAC49C71640286B0098167B /* MDViewController.h */ = {isa = PBXFileReference; path = MDViewController.h; sourceTree = "<group>"; };
+		CEAC49C81640286B0098167B /* MDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEAC49A81640286B0098167B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEAC49B01640286B0098167B /* UIKit.framework in Frameworks */,
+				CEAC49B21640286B0098167B /* Foundation.framework in Frameworks */,
+				CEAC49B41640286B0098167B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEAC49A01640286B0098167B = {
+			isa = PBXGroup;
+			children = (
+				CEAC49B51640286B0098167B /* MapDiaryDemo */,
+				CEAC49AE1640286B0098167B /* Frameworks */,
+				CEAC49AC1640286B0098167B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEAC49AC1640286B0098167B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEAC49AB1640286B0098167B /* MapDiaryDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEAC49AE1640286B0098167B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEAC49AF1640286B0098167B /* UIKit.framework */,
+				CEAC49B11640286B0098167B /* Foundation.framework */,
+				CEAC49B31640286B0098167B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEAC49B51640286B0098167B /* MapDiaryDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CEAC49BE1640286B0098167B /* MDAppDelegate.h */,
+				CEAC49BF1640286B0098167B /* MDAppDelegate.m */,
+				CEAC49C11640286B0098167B /* MainStoryboard_iPhone.storyboard */,
+				CEAC49C41640286B0098167B /* MainStoryboard_iPad.storyboard */,
+				CEAC49C71640286B0098167B /* MDViewController.h */,
+				CEAC49C81640286B0098167B /* MDViewController.m */,
+				CEAC49B61640286B0098167B /* Supporting Files */,
+			);
+			path = MapDiaryDemo;
+			sourceTree = "<group>";
+		};
+		CEAC49B61640286B0098167B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEAC49B71640286B0098167B /* MapDiaryDemo-Info.plist */,
+				CEAC49B81640286B0098167B /* InfoPlist.strings */,
+				CEAC49BB1640286B0098167B /* main.m */,
+				CEAC49BD1640286B0098167B /* MapDiaryDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEAC49AA1640286B0098167B /* MapDiaryDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEAC49CC1640286B0098167B /* Build configuration list for PBXNativeTarget "MapDiaryDemo" */;
+			buildPhases = (
+				CEAC49A71640286B0098167B /* Sources */,
+				CEAC49A81640286B0098167B /* Frameworks */,
+				CEAC49A91640286B0098167B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MapDiaryDemo;
+			productName = MapDiaryDemo;
+			productReference = CEAC49AB1640286B0098167B /* MapDiaryDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEAC49A21640286B0098167B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MD;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = CEAC49A51640286B0098167B /* Build configuration list for PBXProject "MapDiaryDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CEAC49A01640286B0098167B;
+			productRefGroup = CEAC49AC1640286B0098167B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEAC49AA1640286B0098167B /* MapDiaryDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEAC49A91640286B0098167B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEAC49BA1640286B0098167B /* InfoPlist.strings in Resources */,
+				CEAC49C31640286B0098167B /* MainStoryboard_iPhone.storyboard in Resources */,
+				CEAC49C61640286B0098167B /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEAC49A71640286B0098167B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEAC49BC1640286B0098167B /* main.m in Sources */,
+				CEAC49C01640286B0098167B /* MDAppDelegate.m in Sources */,
+				CEAC49C91640286B0098167B /* MDViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CEAC49B81640286B0098167B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEAC49B91640286B0098167B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CEAC49C11640286B0098167B /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEAC49C21640286B0098167B /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		CEAC49C41640286B0098167B /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEAC49C51640286B0098167B /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEAC49CA1640286B0098167B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEAC49CB1640286B0098167B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEAC49CD1640286B0098167B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MapDiaryDemo/MapDiaryDemo-Prefix.pch";
+				INFOPLIST_FILE = "MapDiaryDemo/MapDiaryDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CEAC49CE1640286B0098167B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MapDiaryDemo/MapDiaryDemo-Prefix.pch";
+				INFOPLIST_FILE = "MapDiaryDemo/MapDiaryDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEAC49A51640286B0098167B /* Build configuration list for PBXProject "MapDiaryDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEAC49CA1640286B0098167B /* Debug */,
+				CEAC49CB1640286B0098167B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEAC49CC1640286B0098167B /* Build configuration list for PBXNativeTarget "MapDiaryDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEAC49CD1640286B0098167B /* Debug */,
+				CEAC49CE1640286B0098167B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEAC49A21640286B0098167B /* Project object */;
+}
