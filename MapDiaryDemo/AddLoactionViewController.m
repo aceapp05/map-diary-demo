@@ -37,6 +37,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
+    // by vuaj4
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
