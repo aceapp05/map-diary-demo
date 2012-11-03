@@ -1,24 +1,255 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1906" systemVersion="11A511" targetRuntime="iOS.CocoaTouch" nextObjectID="6" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="EON-P3-Gzh">
     <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="902"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
+        <!--View Controller - Note-->
         <scene sceneID="5">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
                 <viewController id="2" customClass="MDViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Note" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Syj-Y7-0Iy">
+                                <rect key="frame" x="126" y="20" width="68" height="172"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7Hs-lL-bjK">
+                                <rect key="frame" x="20" y="307" width="280" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="New Note">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="DXU-DW-hoF" kind="modal" modalTransitionStyle="flipHorizontal" id="RBn-TL-MeX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Byw-v4-Lo6">
+                                <rect key="frame" x="20" y="352" width="280" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="View Note">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="VqH-Qi-r5F" kind="push" id="rc6-W9-jNh"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Note" id="P8Z-ZR-D6x"/>
                 </viewController>
             </objects>
+            <point key="canvasLocation" x="1450" y="143"/>
+        </scene>
+        <!--View Controller - New Note-->
+        <scene sceneID="7kP-Nf-et5">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B8b-pH-rPT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="DXU-DW-hoF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wnd-x6-yC7">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BCE-cZ-Fkf">
+                                <rect key="frame" x="20" y="403" width="280" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YXd-n0-kVL" kind="modal" modalTransitionStyle="flipHorizontal" id="cHO-cP-AWC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Note" id="ESb-tR-9oR"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1890" y="143"/>
+        </scene>
+        <!--View Controller - View Note-->
+        <scene sceneID="VUK-1c-rFz">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Db-aG-9pC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="VqH-Qi-r5F" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Q1-yl-GRj">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="View Note" id="CYs-QI-ab2"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1450" y="849"/>
+        </scene>
+        <!--Add Note View Controller - Add Note-->
+        <scene sceneID="CZ3-xT-8zW">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8wk-lg-XTb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Dw1-yL-Cyv" customClass="AddNoteViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jfe-e3-p1D">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="F6C-ok-g2u">
+                                <rect key="frame" x="20" y="359" width="72" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Photo">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="k4a-AS-i3P" kind="push" id="WHp-OM-VEQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BmM-QR-Lho">
+                                <rect key="frame" x="100" y="359" width="72" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Map">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="aIu-gu-Isp" kind="push" id="glO-ay-r0T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="E4k-MI-FQM">
+                                <rect key="frame" x="180" y="359" width="120" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EON-P3-Gzh" kind="modal" modalTransitionStyle="crossDissolve" id="4kn-fV-QIK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Note" id="HT3-3l-vci"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2842" y="143"/>
+        </scene>
+        <!--Add Photo View Controller - Add Photo-->
+        <scene sceneID="gI2-6u-j4V">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x6g-dS-JEU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="k4a-AS-i3P" customClass="AddPhotoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sNB-5G-MQl">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Photo" id="A4r-3T-rLK"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3274" y="143"/>
+        </scene>
+        <!--Add Loaction View Controller - Add Location-->
+        <scene sceneID="TnX-Sd-ZrQ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u2n-J3-R8r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="aIu-gu-Isp" customClass="AddLoactionViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g4Q-v3-Ro4">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Location" id="nw6-Bl-UuI"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2222" y="794"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Mpi-p1-EKW">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Za7-wR-SD7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="EON-P3-Gzh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="l0W-aw-bre">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="WOh-Av-rSy"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="1011" y="143"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="n2f-Zd-bso">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P7P-fN-G54" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="YXd-n0-kVL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="PtO-rG-tgv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Dw1-yL-Cyv" kind="relationship" relationship="rootViewController" id="toZ-tv-kLj"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="2406" y="143"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="AddLoactionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddLoactionViewController.h"/>
+        </class>
+        <class className="AddNoteViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddNoteViewController.h"/>
+        </class>
+        <class className="AddPhotoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddPhotoViewController.h"/>
+        </class>
+        <class className="MDViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MDViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

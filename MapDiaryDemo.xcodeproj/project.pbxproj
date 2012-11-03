@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE7D9F9F164170A100A60691 /* AddNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7D9F9E164170A100A60691 /* AddNoteViewController.m */; };
+		CE7D9FA61641716100A60691 /* AddPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7D9FA51641716100A60691 /* AddPhotoViewController.m */; };
+		CE7D9FAA1641721100A60691 /* AddLoactionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7D9FA91641721100A60691 /* AddLoactionViewController.m */; };
+		CEA8AA5B164122C90019D01D /* NewNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA8AA5A164122C90019D01D /* NewNoteViewController.m */; };
 		CEAC49B01640286B0098167B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAC49AF1640286B0098167B /* UIKit.framework */; };
 		CEAC49B21640286B0098167B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAC49B11640286B0098167B /* Foundation.framework */; };
 		CEAC49B41640286B0098167B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAC49B31640286B0098167B /* CoreGraphics.framework */; };
@@ -19,6 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE7D9F9D164170A100A60691 /* AddNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddNoteViewController.h; path = ../AddNoteViewController.h; sourceTree = "<group>"; };
+		CE7D9F9E164170A100A60691 /* AddNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddNoteViewController.m; path = ../AddNoteViewController.m; sourceTree = "<group>"; };
+		CE7D9FA41641716100A60691 /* AddPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddPhotoViewController.h; path = ../AddPhotoViewController.h; sourceTree = "<group>"; };
+		CE7D9FA51641716100A60691 /* AddPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddPhotoViewController.m; path = ../AddPhotoViewController.m; sourceTree = "<group>"; };
+		CE7D9FA81641721100A60691 /* AddLoactionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddLoactionViewController.h; sourceTree = "<group>"; };
+		CE7D9FA91641721100A60691 /* AddLoactionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddLoactionViewController.m; sourceTree = "<group>"; };
+		CEA8AA59164122C90019D01D /* NewNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewNoteViewController.h; path = ../NewNoteViewController.h; sourceTree = "<group>"; };
+		CEA8AA5A164122C90019D01D /* NewNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewNoteViewController.m; path = ../NewNoteViewController.m; sourceTree = "<group>"; };
 		CEAC49AB1640286B0098167B /* MapDiaryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapDiaryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAC49AF1640286B0098167B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CEAC49B11640286B0098167B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -85,6 +97,14 @@
 				CEAC49C41640286B0098167B /* MainStoryboard_iPad.storyboard */,
 				CEAC49C71640286B0098167B /* MDViewController.h */,
 				CEAC49C81640286B0098167B /* MDViewController.m */,
+				CEA8AA59164122C90019D01D /* NewNoteViewController.h */,
+				CEA8AA5A164122C90019D01D /* NewNoteViewController.m */,
+				CE7D9F9D164170A100A60691 /* AddNoteViewController.h */,
+				CE7D9F9E164170A100A60691 /* AddNoteViewController.m */,
+				CE7D9FA41641716100A60691 /* AddPhotoViewController.h */,
+				CE7D9FA51641716100A60691 /* AddPhotoViewController.m */,
+				CE7D9FA81641721100A60691 /* AddLoactionViewController.h */,
+				CE7D9FA91641721100A60691 /* AddLoactionViewController.m */,
 				CEAC49B61640286B0098167B /* Supporting Files */,
 			);
 			path = MapDiaryDemo;
@@ -168,6 +188,10 @@
 				CEAC49BC1640286B0098167B /* main.m in Sources */,
 				CEAC49C01640286B0098167B /* MDAppDelegate.m in Sources */,
 				CEAC49C91640286B0098167B /* MDViewController.m in Sources */,
+				CEA8AA5B164122C90019D01D /* NewNoteViewController.m in Sources */,
+				CE7D9F9F164170A100A60691 /* AddNoteViewController.m in Sources */,
+				CE7D9FA61641716100A60691 /* AddPhotoViewController.m in Sources */,
+				CE7D9FAA1641721100A60691 /* AddLoactionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +313,7 @@
 				CEAC49CE1640286B0098167B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
