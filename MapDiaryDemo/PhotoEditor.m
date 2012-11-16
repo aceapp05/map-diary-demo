@@ -10,8 +10,8 @@
 
 @implementation PhotoEditor
 
-#define INTERVAL_LEN 2
-#define MAX_REPLACE 0.3
+#define INTERVAL_LEN 1
+#define MAX_REPLACE 0.35
 
 + (UIImage *)PhotoWindow:(NSArray *)imageArray 
          withOrientation:(PhotoOrientation)orientation 
@@ -29,7 +29,7 @@
         return newImage;
     }
     
-    NSUInteger mid = num / 2;
+    NSUInteger mid = num / 2 + arc4random() % (num%2 + 1);
     NSRange frontRange;
     frontRange.location = 0;
     frontRange.length = mid - frontRange.location;
