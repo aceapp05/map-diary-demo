@@ -1,0 +1,19 @@
+v0.1 2012/11/16
+
++ (UIImage *)PhotoWindow:(NSArray *)imageArray
+         withOrientation:(PhotoOrientation)orientation 
+                   Range:(CGRect) range;
+
+to merge photos into one image
+@param imageArray: an NSArray contains UIImages
+@param orientation: random select one from structure  PhotoOrientation
+@param range: CGRect of expect output image range
+                  
++ (UIImage *)PhotoMerge:(UIImage *)frontImage
+                  Image:(UIImage *)endImage
+        withOrientation:(PhotoOrientation)orientation;
+
+combine two images by horizontal or vertical
+@param frontImage: one image
+@param endImage: another image
+@para orientation: horizontal or vertical

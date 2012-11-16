@@ -20,6 +20,7 @@
 		CEAC49C31640286B0098167B /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAC49C11640286B0098167B /* MainStoryboard_iPhone.storyboard */; };
 		CEAC49C61640286B0098167B /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAC49C41640286B0098167B /* MainStoryboard_iPad.storyboard */; };
 		CEAC49C91640286B0098167B /* MDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAC49C81640286B0098167B /* MDViewController.m */; };
+		F28085791656978E00DCFBC0 /* How_To_Use.txt in Resources */ = {isa = PBXBuildFile; fileRef = F28085781656978E00DCFBC0 /* How_To_Use.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,9 @@
 		CEAC49C51640286B0098167B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		CEAC49C71640286B0098167B /* MDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDViewController.h; sourceTree = "<group>"; };
 		CEAC49C81640286B0098167B /* MDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDViewController.m; sourceTree = "<group>"; };
+		F2808572165691BB00DCFBC0 /* PhotoEditor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoEditor.h; sourceTree = "<group>"; };
+		F2808573165691BB00DCFBC0 /* PhotoEditor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoEditor.m; sourceTree = "<group>"; };
+		F28085781656978E00DCFBC0 /* How_To_Use.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = How_To_Use.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 		CEAC49B51640286B0098167B /* MapDiaryDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F28085701656918300DCFBC0 /* PhotoEditor */,
 				CEAC49BE1640286B0098167B /* MDAppDelegate.h */,
 				CEAC49BF1640286B0098167B /* MDAppDelegate.m */,
 				CEAC49C11640286B0098167B /* MainStoryboard_iPhone.storyboard */,
@@ -119,6 +124,16 @@
 				CEAC49BD1640286B0098167B /* MapDiaryDemo-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F28085701656918300DCFBC0 /* PhotoEditor */ = {
+			isa = PBXGroup;
+			children = (
+				F2808572165691BB00DCFBC0 /* PhotoEditor.h */,
+				F2808573165691BB00DCFBC0 /* PhotoEditor.m */,
+				F28085781656978E00DCFBC0 /* How_To_Use.txt */,
+			);
+			name = PhotoEditor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +190,7 @@
 				CEAC49BA1640286B0098167B /* InfoPlist.strings in Resources */,
 				CEAC49C31640286B0098167B /* MainStoryboard_iPhone.storyboard in Resources */,
 				CEAC49C61640286B0098167B /* MainStoryboard_iPad.storyboard in Resources */,
+				F28085791656978E00DCFBC0 /* How_To_Use.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
