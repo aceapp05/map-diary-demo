@@ -10,17 +10,19 @@
 
 @implementation PhotoEditor
 
+#define INTERVAL_LEN 2
+#define MAX_REPLACE 0.3
+
 + (UIImage *)PhotoWindow:(NSArray *)imageArray 
          withOrientation:(PhotoOrientation)orientation 
                    Range:(CGRect)range
 {
     NSUInteger num = [imageArray count];
-    NSLog(@"count %d", num);
     if (num == 1) {
         UIImage *image = [imageArray lastObject];
         
         UIGraphicsBeginImageContext(CGSizeMake(range.size.width, range.size.height));
-        [image drawInRect:CGRectMake(0, 0, range.size.width, range.size.height)];
+        [image drawInRect:CGRectMake(0 + INTERVAL_LEN, 0 + INTERVAL_LEN, range.size.width - 2*INTERVAL_LEN, range.size.height - 2*INTERVAL_LEN)];
         UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
         
@@ -38,26 +40,28 @@
     endRange.length = num - endRange.location;
     NSArray *endArray = [imageArray subarrayWithRange:endRange];
     
-    NSLog(@"front %d, end %d", [frontArray count], [endArray count]);
+    //NSLog(@"front %d, end %d", [frontArray count], [endArray count]);
     PhotoOrientation newOrientation;
     CGRect frontRect, endRect;
     if (orientation == PhotoHorizontal) {
         newOrientation = PhotoVertical;
-        frontRect = CGRectMake(range.origin.x, range.origin.y, range.size.width / 2, range.size.height);
-        endRect = CGRectMake(range.origin.x + range.size.width/2, range.origin.y, range.size.width / 2, range.size.height);
+        CGFloat d = arc4random() % (int)(MAX_REPLACE*range.size.width/2);
+        if (frontRange.length < endRange.length) d = -d;
+        frontRect = CGRectMake(range.origin.x, range.origin.y, range.size.width/2 + d, range.size.height);
+        endRect = CGRectMake(range.origin.x + range.size.width/2 + d, range.origin.y, range.size.width/2 - d, range.size.height);
     }
     else if (orientation == PhotoVertical) {
         newOrientation = PhotoHorizontal;
-        frontRect = CGRectMake(range.origin.x, range.origin.y, range.size.width, range.size.height / 2);
-        endRect = CGRectMake(range.origin.x, range.origin.y + range.size.width/2, range.size.width, range.size.height / 2);
+        CGFloat d = arc4random() % (int)(MAX_REPLACE*range.size.height/2);
+        if (frontRange.length < endRange.length) d = -d;
+        frontRect = CGRectMake(range.origin.x, range.origin.y, range.size.width, range.size.height/2 + d);
+        endRect = CGRectMake(range.origin.x, range.origin.y + range.size.height/2 + d, range.size.width, range.size.height/2 - d);
     }
     
     UIImage *frontImage = [PhotoEditor PhotoWindow:frontArray withOrientation:newOrientation Range:frontRect];
     UIImage *endImage = [PhotoEditor PhotoWindow:endArray withOrientation:newOrientation Range:endRect];
     
-    //return frontImage;
-    UIImage *newImage = [PhotoEditor PhotoCombine:frontImage Image:endImage withOrientation:orientation];
-    return newImage;
+    return [PhotoEditor PhotoCombine:frontImage Image:endImage withOrientation:orientation];
 }
 
 
